@@ -36,10 +36,11 @@ h1 {
 
 /* main css  */
 
-/* todo fix the back ground and this project is complete */
-
 body {
-  background: hsl(185, 75%, 39%);
+  background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+  background-repeat: no-repeat;
+  background-color: hsl(185, 75%, 39%);
   font-family: "Kumbh Sans", sans-serif;
   font-size: 16px;
   display: grid;
