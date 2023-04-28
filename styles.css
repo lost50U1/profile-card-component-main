@@ -102,7 +102,7 @@ p {
 .footer {
   display: flex;
   justify-content: space-evenly;
-  border-top: 0.1px thin hsla(0, 0%, 59%, 0.1);
+  border-top: 1px solid hsl(0, 0%, 59%);
 }
 
 .column {
