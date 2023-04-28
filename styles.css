@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 /* css reset  */
 
@@ -10,11 +10,13 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -36,19 +38,20 @@ h1 {
 
 body {
   background: hsl(185, 75%, 39%);
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   font-size: 16px;
   display: grid;
   place-content: center;
 }
 
-main {
+.card {
   background-color: white;
-  max-width: 350px;
+  width: 325px;
   border-radius: 1rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
 }
 
 .banner {
@@ -56,16 +59,60 @@ main {
   height: 140px;
 }
 
+.avatar {
+  position: relative;
+  margin: auto;
+  top: -50px;
+  right: 0;
+  left: 0;
+  height: auto;
+  border-radius: 50%;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 0 0 5px white, inset 0 0 0 5px white, inset 0 0 0 5px white,
+    inset 0 0 0 5px white, inset 0 0 0 5px white;
+}
+
+img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 #name {
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: center;
   color: hsl(0, 0%, 59%);
   font-weight: 400;
+  position: relative;
+  top: -30px;
+  right: 0;
+  left: 0;
 }
 
 p {
   text-align: center;
   color: hsl(0, 0%, 59%);
+  position: relative;
+  top: -30px;
+  right: 0;
+  left: 0;
+  font-size: 0.9rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 0.1px thin hsla(0, 0%, 59%, 0.1);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: hsl(0, 0%, 59%);
+  font-size: 0.7rem;
+  padding-bottom: 1.2rem;
+  padding-top: 1.2rem;
 }
 
 .blue {
@@ -73,13 +120,6 @@ p {
   font-weight: 700;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.big {
+  font-size: 1.1rem;
 }
