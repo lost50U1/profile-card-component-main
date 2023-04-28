@@ -38,4 +38,48 @@ body {
   background: hsl(185, 75%, 39%);
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 16px;
+  display: grid;
+  place-content: center;
+}
+
+main {
+  background-color: white;
+  max-width: 350px;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  background-image: url(images/bg-pattern-card.svg);
+  height: 140px;
+}
+
+#name {
+  font-size: 1rem;
+  text-align: center;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+p {
+  text-align: center;
+  color: hsl(0, 0%, 59%);
+}
+
+.blue {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
